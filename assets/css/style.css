@@ -1,133 +1,142 @@
 /* start */
 
-#container {
-
+body {
+  border: 1px black dotted;
+  display: flex
+  flex-direction:column;
 }
 
 #header {
-  height: 20px;
-  width: 300px;
+  height: 10%;
+  width: 40%;
   margin-left: 33.33%;
   margin-right: 33.33%;
-  border-color: black;
-  border-style: solid;
-  border-width: 2px;
+  border: 1px black dotted;
   text-align: center;
   margin-top: 20px;
 }
 
 h1 {
-
-}
-
-h2 {
-
+  border: 1px black dotted;
+  text-align: center;
 }
 
 #score-head {
-  height: 20px;
-  width: 300px;
+  height: 10%;
+  width: 40%;
   margin-left: 33.33%;
   margin-right: 33.33%;
-  border-color: black;
-  border-style: solid;
-  border-width: 2px;
+  border: 1px black dotted;
   text-align: center;
   margin-top: 20px;
+}
+
+h2 {
+  border: 1px black dotted;
+  text-align: center;
 }
 
 #score-box {
-  height: 100px;
-  width: 300px;
+  height: 25%;
+  width: 40%;
   margin-left: 33.33%;
   margin-right: 33.33%;
-  border-color: black;
-  border-style: solid;
-  border-width: 2px;
+  border: 1px black dotted;
   text-align: center;
   margin-top: 20px;
+  font-size: 80px;
+}
+
+#sb {
+  font-size: 80px;
+  font-size: 80px;
+  border: 1px black dotted;
+  text-align: center;
 }
 
 #crystal-head {
-  height: 20px;
-  width: 300px;
+  height: 10%;
+  width: 40%;
   margin-left: 33.33%;
   margin-right: 33.33%;
-  border-color: black;
-  border-style: solid;
-  border-width: 2px;
+  border: 1px black dotted;
   text-align: center;
   margin-top: 20px;
 }
 
 #crystals {
-  height: 100px;
-  width: 300px;
+  height: 25%;
+  width: 40%;
   margin-left: 33.33%;
   margin-right: 33.33%;
-  border-color: black;
-  border-style: solid;
-  border-width: 2px;
+  border: 1px black dotted;
   text-align: center;
   margin-top: 20px;
 }
 
 #guess-head {
-  height: 20px;
-  width: 300px;
+  height: 10%;
+  width: 40%;
   margin-left: 33.33%;
   margin-right: 33.33%;
-  border-color: black;
-  border-style: solid;
-  border-width: 2px;
+  border: 1px black dotted;
   text-align: center;
   margin-top: 20px;
 }
 
 #guess-box {
-  height: 100px;
-  width: 300px;
+  height: 25%;
+  width: 40%;
   margin-left: 33.33%;
   margin-right: 33.33%;
-  border-color: black;
-  border-style: solid;
-  border-width: 2px;
+  border: 1px black dotted;
   text-align: center;
   margin-top: 20px;
+  font-size: 80px;
+}
+
+#gb {
+  font-size: 80px;
+  font-size: 80px;
+  border: 1px black dotted;
+  text-align: center;
 }
 
 #win-loss-head {
-  height: 20px;
-  width: 300px;
+  height: 10%;
+  width: 40%;
   margin-left: 33.33%;
   margin-right: 33.33%;
-  border-color: black;
-  border-style: solid;
-  border-width: 2px;
+  border: 1px black dotted;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+#win-loss {
+  display: flex:
+  flex-direction:column;
+  height: 10%;
+  width: 40%;
+  margin-left: 33.33%;
+  margin-right: 33.33%;
+  border: 1px black dotted;
   text-align: center;
   margin-top: 20px;
 }
 
-#win-loss1 {
-  height: 50px;
-  width: 300px;
-  margin-left: 33.33%;
-  margin-right: 33.33%;
-  border-color: black;
-  border-style: solid;
-  border-width: 2px;
+#win {
+  font-size: 30px;
+  font-weight: 400;
   text-align: center;
-  margin-top: 20px;
+  width: 25%;
+  border-right: 1px solid black;
 }
 
-#win-loss2 {
-  height: 50px;
-  width: 300px;
-  margin-left: 33.33%;
-  margin-right: 33.33%;
-  border-color: black;
-  border-style: solid;
-  border-width: 2px;
+#loss {
+  font-size: 30px;
+  font-weight: 400;
   text-align: center;
-  margin-top: 20px;
+  width: 25%;
+  border-left: 1px solid black;
 }

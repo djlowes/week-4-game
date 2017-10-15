@@ -22,27 +22,19 @@
 //5. If playerScore > compScore then loss()
 //6. If playerScore === compScore then win()
 
-//7. loss() = window.onload, reset all variables & alert user to loss
-//8. win() = window.onload, reset all variables & alert user to win
+//7. loss() = reset all variables & alert user to loss
+//8. win() = reset all variables & alert user to win
 
 
-//var myScore = 0;
-//var compScore = Math.floor((Math.random() * 100) + 1);
-//var dOne = Math.floor((Math.random() * 10) + 1);
-//var dTwo = Math.floor((Math.random() * 10) + 1);
-//var dThree = Math.floor((Math.random() * 10) + 1);
-//var dFour = Math.floor((Math.random() * 10) + 1);
-//var winCount = 0;
-//var lossCount = 0;
-//var diamond = document.getElementById('diamond');
-//var amethyst = document.getElementById('amethyst');
-//var emerald = document.getElementById('emerald');
-//var garnet = document.getElementById('garnet');
+
+
+
+
 
 
 // On load, generate all of the random numbers and set the counters to 0
 
-$(document).ready(function set() {
+$(document).ready(function() {
   myScore = 0;
   compScore = Math.floor((Math.random() * 100) + 1);
   dOne = Math.floor((Math.random() * 10) + 1);
@@ -56,16 +48,16 @@ $(document).ready(function set() {
   console.log(dTwo);
   console.log(dThree);
   console.log(dFour);
-  $("#guess-box").html(compScore.toString());
-  $("#score-box").html(myScore.toString());
+  $("#gb").html(compScore.toString());
+  $("#sb").html(myScore.toString());
 });
 
 
 // Click Functions
 
   $('#diamond').click(function(){
-  myScore = myScore + dOne
-  $("#score-box").html(myScore.toString())
+  myScore = myScore + dOne;
+  $("#sb").html(myScore.toString())
   if(myScore === compScore) {
     win();
     console.log("win function")
@@ -77,8 +69,8 @@ $(document).ready(function set() {
   });
 
   $('#amethyst').click(function(){
-  myScore = myScore + dTwo
-  $("#score-box").html(myScore.toString())
+  myScore = myScore + dTwo;
+  $("#sb").html(myScore.toString())
   if(myScore === compScore) {
     win();
     console.log("win function")
@@ -90,8 +82,8 @@ $(document).ready(function set() {
   });
 
   $('#emerald').click(function(){
-  myScore = myScore + dThree
-  $("#score-box").html(myScore.toString())
+  myScore = myScore + dThree;
+  $("#sb").html(myScore.toString())
   if(myScore === compScore) {
     win();
     console.log("win function")
@@ -103,8 +95,8 @@ $(document).ready(function set() {
   });
 
   $('#garnet').click(function(){
-  myScore = myScore + dFour
-  $("#score-box").html(myScore.toString())
+  myScore = myScore + dFour;
+  $("#sb").html(myScore.toString())
   if(myScore === compScore) {
     win();
     console.log("win function")
@@ -118,22 +110,24 @@ $(document).ready(function set() {
 //Win Function - alert user to win, add and display win tally
 
 function win() {
-alert("You Win!")
-winCount++
-$("#win-loss1").html(winCount.toString());
-console.log(winCount)
-reset();
+  alert("You Win!");
+  winCount++;
+  $("#win").html(winCount.toString());
+  console.log(winCount);
+  reset();
 }
 
 // Loss function - alert user to loss, add and display loss tally
 
 function loss() {
-alert("You Lose!")
-lossCount++
-$("#win-loss2").html(winCount.toString());
-console.log(lossCount)
-reset();
+  alert("You Lose!");
+  lossCount++;
+  $("#loss").html(lossCount.toString());
+  console.log(lossCount);
+  reset();
 }
+
+// Resets numbers to start game again
 
 function reset() {
   myScore = 0;
@@ -147,6 +141,6 @@ function reset() {
   console.log(dTwo);
   console.log(dThree);
   console.log(dFour);
-  $("#guess-box").html(compScore.toString());
-  $("#score-box").html(myScore.toString());
+  $("#gb").html(compScore.toString());
+  $("#sb").html(myScore.toString());
 };
